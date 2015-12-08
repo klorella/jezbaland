@@ -1,0 +1,50 @@
+
+.nupp {
+  background: #2e4b68;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  font-family: Helvetica;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 20px 40px 20px 40px;
+  text-decoration: none;
+  margin: 60px;
+  font-family: 'Minecraftfont';
+}
+
+.nupp:hover {
+  background: #405871;
+  text-decoration: none;
+}
+
+html {
+    background: url('img/hexabump.png') repeat;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.menu {
+    width: 100%;
+    height: 200px;
+    background: url('img/footer_lodyas.png') repeat;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.nupud {
+    margin: auto;
+    text-align: center;
+    padding: 70px;
+}
+
+@font-face {
+    font-family: 'Minecraftfont';
+    src: url(font/minecraftfont.ttf);
+}
