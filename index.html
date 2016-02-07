@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- jQuery library (served from Google) -->
-    <script src="jquery-1.11.3.min.js"></script>
-    <!-- bxSlider Javascript file -->
-    <script src="jquery.bxslider.min.js"></script>
-    <!-- bxSlider CSS file -->
-    <link href="jquery.bxslider.css" rel="stylesheet" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
-    
-    <link href="style.css" rel="stylesheet"/>
+  <!-- jQuery library (served from Google) -->
+  <script src="jquery-1.11.3.min.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script src="jquery.bxslider.min.js"></script>
+  <!-- bxSlider CSS file -->
+  <link href="jquery.bxslider.css" rel="stylesheet" />
+  
+  <!-- Slick Slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+
+  <link href="style.css" rel="stylesheet"/>
 </head>
 
 <body>
-    <div class="header">
-        
-        <div class="menu">
-            <img src="img/banner.png">
-        </div>
-        
-        <ul class="bxslider">
-          <li><img src="img/banner1.png" /></li>
-          <li><img src="img/banner2.png" /></li>
-          <li><img src="img/banner3.png" /></li>
-          <li><img src="img/banner4.png" /></li>
-          <li><img src="img/banner5.png" /></li>
-        </ul>
-        
-        <div class="nupud">
-    <a  class="nupp" href="http://ikt.khk.ee/~janne-mai.liias/JL/world-smooth/index.html">
+  <div class="header">
+    <img src="img/banner.png">
+    
+  </div>
+   
+  <div class="menu">
+
+
+    <ul class="menu_links">
+      <li class="menu_link"><a href="#">1.0</a></li>
+      <li class="menu_link"><a href="#">2.0</a></li>
+    </ul>
+
+  </div>
+  
+  <div class="slider">
+    <ul class="slick-slider">
+      <li><img src="img/banner1.png" /></li>
+      <li><img src="img/banner2.png" /></li>
+      <li><img src="img/banner3.png" /></li>
+      <li><img src="img/banner4.png" /></li>
+      <li><img src="img/banner5.png" /></li>
+    </ul>
+  </div>
+
+  <div class="nupud">
+    <a class="nupp" href="http://ikt.khk.ee/~janne-mai.liias/JL/world-smooth/index.html">
         NORMAL
     </a>
-    <a  class="nupp" href="http://ikt.khk.ee/~janne-mai.liias/JL/world-cave/index.html">
+    <a class="nupp nupp-cave" href="http://ikt.khk.ee/~janne-mai.liias/JL/world-cave/index.html">
         CAVE
     </a>
-    </div>
-    </div>
-    
-    <div class="nupud">
-    <a  class="nupp" href="http://ikt.khk.ee/~janne-mai.liias/JL/world-smooth/index.html">
-        NORMAL
-    </a>
-    <a  class="nupp" href="http://ikt.khk.ee/~janne-mai.liias/JL/world-cave/index.html">
-        CAVE
-    </a>
-    </div>
-    
-    <script>
-        $('.bxslider').bxSlider({
-            mode: 'fade',
-            controls: false,
-            auto: true,
-            pager: false,
-            speed: 2500
-        });
-    </script>
+  </div>
+  
+
+  
+  <script>
+    $('.slick-slider').slick({
+      infinite: true,
+      speed: 300,
+      arrows: false
+    });
+  </script>
+
+  <!--<script>
+      $('.bxslider').bxSlider({
+          mode: 'fade',
+          controls: false,
+          auto: true,
+          pager: false,
+          speed: 2500
+      });
+  </script>-->
 </body>
 </html>

@@ -1,50 +1,107 @@
+html,body {
+  background: url('img/hexabump.png') repeat;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Minecraftfont';
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 
 .nupp {
-  background: #2e4b68;
+  background: white;
   -webkit-border-radius: 2;
   -moz-border-radius: 2;
-  border-radius: 2px;
-  font-family: Helvetica;
-  color: #ffffff;
+  color: forestGreen;
+  border: 8px solid forestGreen;
   font-size: 24px;
   padding: 20px 40px 20px 40px;
   text-decoration: none;
   margin: 60px;
   font-family: 'Minecraftfont';
+  transition: .2s;
 }
 
-.nupp:hover {
-  background: #405871;
+.nupp:hover,
+.nupp:focus {
+  background: forestGreen;
+  color: white;
+  border: 8px solid white;
   text-decoration: none;
 }
 
-html {
-    background: url('img/hexabump.png') repeat;
-    box-sizing: border-box;
+.nupp-cave {
+  color: fireBrick;
+  border: 8px solid fireBrick;
+}
+
+.nupp-cave:hover,
+.nupp-cave:focus {
+  background: fireBrick;
 }
 
 .header {
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  width: 100%;
+  display: block;
+  background: url('img/footer_lodyas.png') repeat;
+  text-align: center;
+  padding: 40px 0 0 0;
 }
 
 .menu {
-    width: 100%;
-    height: 200px;
-    background: url('img/footer_lodyas.png') repeat;
-	text-align: center;
-	padding-top: 40px;
+  background: url('img/hexabump.png') repeat;
+  width: 100%;
+  text-align: center;
+}
+
+.menu_links a {
+  color: grey;
+  font-size: 32px;
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  background: white;
+  border: 8px solid dimGray;
+  margin: 20px;
+  transition: .2s;
+}
+
+.menu_links a:hover,
+.menu_links a:focus {
+  text-decoration: none;
+  background: dimGray;
+  color: white;
+  border: 8px solid white;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+.menu_link {
+  display: inline-block;
 }
 
 .nupud {
-    margin: auto;
-    text-align: center;
-    padding: 70px;
+  margin: auto;
+  text-align: center;
+  padding: 70px;
+}
+
+.slider {
+  width: 100%;
+  clear: both;
+}
+
+.slider ul, li {
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-    font-family: 'Minecraftfont';
-    src: url(font/minecraftfont.ttf);
+  font-family: 'Minecraftfont';
+  src: url(font/minecraftfont.ttf);
 }
