@@ -1,10 +1,31 @@
-html,body {
-  background: url('img/hexabump.png') repeat;
-  box-sizing: border-box;
+@font-face {
   font-family: 'Minecraftfont';
-  height: 100%;
+  src: url(font/minecraftfont.ttf);
+}
+
+html,
+body {
+  background: url('img/hexabump.png') repeat;
+  font-family: 'Minecraftfont';
   width: 100%;
-  margin: 0;
+  font-size: 16px;
+}
+
+html {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 0 140px;
+}
+
+.section {
+  margin: 40px 0;
 }
 
 img {
@@ -45,7 +66,7 @@ img {
   text-decoration: none;
   background: white;
   border: 8px solid dimGray;
-  margin: 20px;
+  margin-top: 40px;
   transition: .2s;
 }
 
@@ -60,6 +81,7 @@ img {
 .menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: block;
   width: 100%;
 }
@@ -87,18 +109,175 @@ img {
   font-size: 42px;
 }
 
+.slider {
+  width: 75%;
+  margin: 0 auto;
+}
+
 .slider ul, li {
   padding: 0;
   margin: 0;
+}
+
+.slick-slider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slider li {
+  border: 8px solid white;
+}
+
+.infoBar {
+  color: white;
+  text-align: center;
+}
+
+.infoBar_content {
+  display: inline-block;
+  background-color: black;
+  border: 8px solid dimGray;
+  padding: 16px;
+}
+
+.members {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  color: white;
+}
+
+.members_col {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.members_content {
+  margin: 0 16px;
+  border: 8px solid white;
+}
+
+.members_member {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  padding-bottom: 100%;
+  text-decoration: none;
+  color: transparent;
+  position: relative;
+  transition: .2s;
+  
+}
+
+.members_member:hover,
+.member_member:focus {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+.members_member:before {
+  position: absolute;
+  content: 'Klorella';
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-size: 52px;
+  padding-top: 40%;
+  transition: .2s;
+}
+
+#member-2:before {
+  content: 'saralym';
+}
+
+#member-3:before {
+  content: 'galacticyoyo';
+}
+
+.members_member:hover:before {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.halfCol {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.halfCol_left {
+  float: left;
+  width: 100%;
+}
+
+.halfCol_right {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  padding-left: 0;
+}
+
+.halfCol_content {
+  border: 8px solid dimGray;
+  background-color: white;
+  padding: 16px;
+}
+
+.halfCol h2 {
+  font-size: 48px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+
+.footer_content {
+  width: 60%;
+  margin: 0 auto;
+  color: dimgray;
+  overflow: hidden;
+}
+
+.footer_text {
+  float: left;
+  width: 50%;
+  padding: 36px 0;
+}
+
+.footer_text-right {
+  text-align: right;
+}
+
+.banana {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  top: 25px;
 }
 
 @media screen and (min-width: 1000px) {
   .banner {
     width: 40%;
   }
-}
+  
+  .halfCol_left {
+    float: left;
+    width: 35%;
+  }
 
-@font-face {
-  font-family: 'Minecraftfont';
-  src: url(font/minecraftfont.ttf);
+  .halfCol_right {
+    float: left;
+    width: 65%;
+    margin-top: 0;
+    padding-left: 40px;
+  }
 }
