@@ -186,7 +186,7 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  font-size: 2em;
+  font-size: 1.7vw;
   padding-top: 40%;
   transition: .2s;
 }
@@ -228,7 +228,7 @@ img {
 }
 
 .halfCol h2 {
-  font-size: 48px;
+  font-size: 2vw;
 }
 
 footer {
