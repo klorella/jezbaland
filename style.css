@@ -186,7 +186,7 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  font-size: 52px;
+  font-size: 2em;
   padding-top: 40%;
   transition: .2s;
 }
