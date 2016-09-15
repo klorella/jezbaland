@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- jQuery library -->
+    <script src="jquery-1.11.3.min.js"></script>
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+
+    <div class="header">
+      <div class="banner">
+        <a href="index.html"><img src="img/jezbaland.svg"></a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <ul class="menu_links">
+        <li><a href="jl1-0.html" class="menu_link">1.0</a></li>
+        <li><a href="jl2-0.html" class="menu_link">2.0</a></li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="infoBar">
+        <div class="infoBar_content">
+          <ul class="infoBar_links">
+            <li><a href="#" onclick="setURL('map/daytime/index.html')" class="infoBar_link" id="btn_day">day</a></li>
+            <li><a href="#" onclick="setURL('map/nighttime/index.html')" class="infoBar_link" id="btn_night">night</a></li>
+            <li><a href="#" onclick="setURL('map/nether/index.html')" class="infoBar_link" id="btn_nether">nether</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="mapFrame">
+        <iframe id="iframe" src="map/daytime/index.html" frameborder="0"></iframe>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="footer_content">
+        <div class="footer_text footer_text-left">
+          Whooooops...
+        </div>
+        <img src="img/banana.png" alt="galacticyoyo knows" class="banana">
+        <div class="footer_text footer_text-right">
+          I'm used to that!
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $('.slick-slider').slick({
+        infinite: true,
+        speed: 600,
+        arrows: false,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear'
+      });
+      
+      function setURL(url){
+        document.getElementById('iframe').src = url;
+      }
+      
+      ( function( $ ) {
+        $( 'a[href="#"]' ).click( function(e) {
+          e.preventDefault();
+        } );
+      } )( jQuery );
+    </script>
+
+  </body>
+</html>
