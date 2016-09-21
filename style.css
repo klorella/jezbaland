@@ -198,6 +198,19 @@ img {
   border: 8px solid royalblue;
 }
 
+#btn_nether {
+  color: darkred;
+  background: black;
+  border: 8px solid darkred;
+}
+
+#btn_nether:hover,
+#btn_nether:focus {
+  background: darkred;
+  color: black;
+  border: 8px solid black;
+}
+
 .members {
   width: 60%;
   margin: 0 auto;
