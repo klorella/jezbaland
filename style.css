@@ -135,10 +135,15 @@ img {
 }
 
 .infoBar_content {
-  display: block;
+  display: inline-block;
   background-color: black;
   border: 8px solid dimGray;
   padding: 16px;
+  
+}
+
+.infoBar-front .infoBar_content {
+  display: block;
   max-width: 420px;
   margin: 0 auto;
 }
