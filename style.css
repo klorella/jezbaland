@@ -135,10 +135,16 @@ img {
 }
 
 .infoBar_content {
-  display: inline-block;
+  display: block;
   background-color: black;
   border: 8px solid dimGray;
   padding: 16px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.omgserv_img {
+  width: 420px;
 }
 
 .infoBar_links {
@@ -276,7 +282,6 @@ img {
 .halfCol {
   width: 60%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .halfCol_left {

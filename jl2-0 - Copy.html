@@ -2,11 +2,11 @@
 <html>
   <head>
 
-    <title>Jezbaland - Klorella</title>
+    <title>Jezbaland - 2.0</title>
     
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico?" />
 
-    <!-- jQuery library -->
+    <!-- jQuery -->
     <script src="jquery-1.11.3.min.js"></script>
 
     <!-- Slick Slider -->
@@ -32,7 +32,7 @@
   </head>
 
   <body>
-
+   
     <div class="header">
       <div class="banner">
         <a href="/jezbaland"><img src="img/jezbaland.svg"></a>
@@ -40,41 +40,34 @@
     </div>
 
     <div class="menu">
+
       <ul class="menu_links">
         <li><a href="jl1-0.html" class="menu_link">1.0</a></li>
-        <li><a href="jl2-0.html" class="menu_link">2.0</a></li>
         <li><a href="map.html" class="menu_link">MAP</a></li>
       </ul>
-    </div>
 
+    </div>
+    
     <div class="section">
-      <div class="halfCol">
-        <div class="halfCol_left">
-          <div class="halfCol_content">
-            <h2 style="color:red">Klorella</h2>
-            <h3>notable builds:</h3>
-            <ul>
-              <li>spawn mountain tunnels</li>
-              <li>desert kingdom (bow down for bunny!)</li>
-              <li>nether hub center</li>
-              <li>guardian farm</li>
-            </ul>
-          </div>
-          
-        </div>
-        <div class="halfCol_right">
-          <div class="halfCol_slider">
-            <ul class="slick-slider">
-              <li><img src="img/klorella%20(3).png" /></li>
-              <li><img src="img/jl2_6.jpg" /></li>
-              <li><img src="img/klorella%20(1).png" /></li>
-              <li><img src="img/jl2_1.jpg" /></li>
-              <li><img src="img/klorella%20(2).png" /></li>
-            </ul>
-          </div>
+      <div class="infoBar">
+        <div class="infoBar_content">
+          SEED: 8858351513851407858
         </div>
       </div>
-      
+    </div>
+    
+    <div class="section">
+      <div class="slider">
+        <ul class="slick-slider">
+          <li><img src="img/all%20(1).png" /></li>
+          <li><img src="img/jl2_1.jpg" /></li>
+          <li><img src="img/jl2_2.jpg" /></li>
+          <li><img src="img/jl2_5.jpg" /></li>
+          <li><img src="img/jl2_3.jpg" /></li>
+          <li><img src="img/jl2_4.jpg" /></li>
+          <li><img src="img/all%20(2).png" /></li>
+        </ul>
+      </div>
     </div>
     
     <footer>
@@ -88,7 +81,21 @@
         </div>
       </div>
     </footer>
-
+    
+    <h2>Online players</h2>
+<ul>
+<?php
+$data = json_decode(file_get_contents("http://panel.omgserv.com/json/43951/players"));
+if (empty($data->players)) {
+		echo('<li>No player online</li>');
+} else {
+	foreach ($data->players as $player) {
+		echo('<li>'.$player.'</li>');
+	}
+}
+?>
+</ul>
+    
     <script>
       $('.slick-slider').slick({
         infinite: true,
