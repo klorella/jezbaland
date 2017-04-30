@@ -41,15 +41,15 @@
       $(document).ready(function() {
         players();
     });*/
+      function jsonCallback(json){
+  console.log(json);
+}
+    $.ajax({
+  url: "http://panel.omgserv.com/json/43951/players",
+  dataType: "jsonp"
+});
       
-    var players = $("<script />", {
-      src: "http://panel.omgserv.com/json/43951/players",
-      type: "application/json"
-      }
-    );
-      
-      $(".please").append(players);
-      console.log(players);
+      jsonCallback();
 
   </script>
   </head>
