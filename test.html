@@ -42,13 +42,14 @@
         players();
     });*/
       
-    var script = $("<script />", {
+    var players = $("<script />", {
       src: "http://panel.omgserv.com/json/43951/players",
       type: "application/json"
       }
     );
       
-      $(".please").append(script);
+      $(".please").append(players);
+      console.log(players);
 
   </script>
   </head>
