@@ -34,10 +34,10 @@
        type: 'GET',
        url: 'http://panel.omgserv.com/json/43951/players',
        dataType: 'jsonp',
-       jsonpCallback: 'callback',
        success: function(data){
          console.log(data);
-       }
+       },
+        jsonp: 'jsonp'
       });
     }
       $(document).ready(function() {
