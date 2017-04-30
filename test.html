@@ -41,16 +41,9 @@
       $(document).ready(function() {
         players();
     });*/
-      function jsonCallback(json){
+      $.getJSON("http://panel.omgserv.com/json/43951/players?callback=?",function(json){
   console.log(json);
-}
-    $.ajax({
-      url: "http://panel.omgserv.com/json/43951/players",
-      dataType: "jsonp",
-      jsonpCallback: 'callback'
 });
-      
-      jsonCallback();
 
   </script>
   </head>
