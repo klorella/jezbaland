@@ -33,11 +33,9 @@
       $.ajax({
        type: 'GET',
        url: 'http://panel.omgserv.com/json/43951/players',
-       dataType: 'jsonp',
        success: function(data){
          console.log(data);
-       },
-        jsonp: 'jsonp'
+       }
       });
     }
       $(document).ready(function() {
@@ -49,7 +47,7 @@
 
   <body>
 
-    <div>Please:</div>
+    <div>Please:1</div>
 
   </body>
 </html>
