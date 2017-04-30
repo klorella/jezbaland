@@ -28,7 +28,7 @@
     </script>
     
     <script>
-  
+   /*
     function players() {
       $.ajax({
        type: 'GET',
@@ -40,14 +40,22 @@
     }
       $(document).ready(function() {
         players();
-    });
+    });*/
+      
+    var script = $("<script />", {
+      src: "http://panel.omgserv.com/json/43951/players",
+      type: "application/json"
+      }
+    );
+      
+      $(".please").append(script);
 
   </script>
   </head>
 
   <body>
 
-    <div>Please:1</div>
+    <div class="please"></div>
 
   </body>
 </html>
