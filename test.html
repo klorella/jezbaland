@@ -1,6 +1,9 @@
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <script>
+  /*
 var rq = '//api.syfaro.net/server/status';
 var error = 'unknown';
 var classes = {
@@ -73,6 +76,28 @@ function display(data) {
 $(document).ready(function() {
 	q('62.210.232.182', display);
 });
+*/
+  
+  function players() {
+	$.ajax({
+		url: 'http://panel.omgserv.com/json/43951/players',
+		type: 'GET',
+		dataType: 'json',
+	})
+	.done(function(data) {
+		console.log("success");
+		console.log(data);
+	})
+	.fail(function(data) {
+		console.log("error");
+	})
+	.always(function() {
+	});
+}
+  $(document).ready(function() {
+	players();
+});
+  
 </script>
 
 <style type="text/css" media="screen">
@@ -118,3 +143,5 @@ $(document).ready(function() {
 	<i id="updated" class="fa fa-question grey"></i>
 	<br/>
 </div>
+
+<div>Please:</div>
