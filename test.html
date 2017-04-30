@@ -31,18 +31,13 @@
   
     function players() {
       $.ajax({
-          url: 'http://panel.omgserv.com/json/43951/players',
-          type: 'GET',
-          dataType: 'jsonp',
-      })
-      .done(function(data) {
-          console.log("success");
-          console.log(data);
-      })
-      .fail(function(data) {
-          console.log("error");
-      })
-      .always(function() {
+       type: 'GET',
+       url: 'http://panel.omgserv.com/json/43951/players',
+       dataType: 'jsonp',
+       jsonpCallback: 'callback',
+       success: function(data){
+         console.log(data);
+       }
       });
     }
       $(document).ready(function() {
