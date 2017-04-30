@@ -18,7 +18,7 @@
     <h2>List of online players:</h2><p id="playerListHTML">Loading players...</p>
 
     <script>
-      $.getJSON('https://api.syfaro.net/minecraft/1.2/server/info?ip=[b][u]INSERT SERVER IP HERE[/u][/b]&port=25565', function(data) {
+      $.getJSON('https://api.syfaro.net/minecraft/1.2/server/info?ip=[b][u]jezbaland.mine.gg[/u][/b]&port=25565', function(data) {
         document.getElementById('lastUpdate').textContent="Last Update: "+data.last_update+"(GMT-6)";
         document.getElementById('version').textContent="Minecraft Version: MC Release V. "+data.version;
         document.getElementById('serverVersion').textContent="Server MOTD: "+data.motd;
