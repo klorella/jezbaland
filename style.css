@@ -5,10 +5,10 @@
 
 html,
 body {
-  background: url('img/hexabump.png') repeat;
   font-family: 'Minecraftfont';
   width: 100%;
   font-size: 16px;
+  background-color: #333;
 }
 
 html {
@@ -28,6 +28,14 @@ body {
   margin: 40px 0;
 }
 
+.section-top {
+  margin-top: 0;
+}
+
+.section-bottom {
+  margin-bottom: -6px;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -36,9 +44,11 @@ img {
 .header {
   width: 100%;
   display: block;
-  background: url('img/footer_lodyas.png') repeat;
+  background-image: url('img/header_bg.jpg');
+  background-size: cover;
   text-align: center;
   padding: 40px 0;
+  border-bottom: 6px solid #666;
 }
 
 .banner {
@@ -53,29 +63,34 @@ img {
 }
 
 .menu {
-  background: url('img/hexabump.png') repeat;
   width: 100%;
   text-align: center;
 }
 
 .menu_link {
-  color: grey;
-  font-size: 32px;
+  color: black;
+  font-size: 24px;
   display: block;
-  padding: 20px 30px;
+  padding: 17px 0;
   text-decoration: none;
-  background: white;
-  border: 8px solid dimGray;
-  margin-top: 40px;
+  background-color: #999;
+  border: 6px solid #666;
+  margin-top: -6px;
+  margin-left: -9px;
   transition: .2s;
+  width: 83px;
+  height: 80px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .menu_link:hover,
 .menu_link:focus {
   text-decoration: none;
-  background: dimGray;
-  color: white;
-  border: 8px solid white;
+  background-color: #b3afaf;
 }
 
 .menu_links {
@@ -94,7 +109,7 @@ img {
 .normal:focus {
   background: forestGreen;
   color: white;
-  border: 8px solid white;
+  border: 6px solid white;
 }
 
 .cave:hover,
@@ -126,20 +141,19 @@ img {
 }
 
 .slick-slider li {
-  border: 8px solid white;
+  border: 6px solid #666;
 }
 
 .infoBar {
-  color: white;
+  color: black;
   text-align: center;
 }
 
 .infoBar_content {
   display: inline-block;
-  background-color: black;
-  border: 8px solid dimGray;
+  background-color: #999;
+  border: 6px solid #666;
   padding: 16px;
-  
 }
 
 .infoBar-front .infoBar_content {
@@ -149,7 +163,8 @@ img {
 }
 
 .omgserv_img {
-  width: 420px;
+  width: 420px;border: 6px solid #666;
+  margin-top: -6px;
 }
 
 .infoBar_links {
@@ -162,64 +177,51 @@ img {
 
 .infoBar_links li {
   display: inline-block;
+  margin-left: -9px;
 }
 
 .infoBar_link {
-  color: grey;
+  color: black;
   font-size: 20px;
   display: block;
   padding: 20px 30px;
   text-decoration: none;
-  background: white;
-  border: 8px solid dimGray;
+  background-color: #fff;
+  border: 6px solid #666;
   transition: .2s;
+  opacity: 1;
+  width: 83px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
 }
 
 .infoBar_link:hover,
 .infoBar_link:focus {
   text-decoration: none;
-  background: dimGray;
-  color: white;
-  border: 8px solid white;
+  
 }
 
 #btn_day {
-  color: orangered;
-  background: gold;
-  border: 8px solid orangered;
-}
-
-#btn_day:hover,
-#btn_day:focus {
-  background: orangered;
-  color: gold;
-  border: 8px solid gold;
+  background-image: url('img/sun.png');
+  
 }
 
 #btn_night {
-  color: midnightblue;
-  background: royalblue;
-  border: 8px solid midnightblue;
-}
-
-#btn_night:hover,
-#btn_night:focus {
-  background: midnightblue;
-  color: royalblue;
-  border: 8px solid royalblue;
+  background-image: url('img/moon.png');
 }
 
 #btn_nether {
-  color: darkred;
-  background: black;
-  border: 8px solid darkred;
+  background-image: url('img/ghast.png');
 }
 
 #btn_nether:hover,
 #btn_nether:focus {
-  background: darkred;
-  color: black;
-  border: 8px solid black;
+  background-image: url('img/ghast_open.png');
+}
+
+#btn_end {
+  background-image: url('img/dragon.png');
 }
 
 .members {
@@ -237,7 +239,7 @@ img {
 
 .members_content {
   margin: 0 16px;
-  border: 8px solid white;
+  border: 6px solid #666;
 }
 
 .members_member {
@@ -302,8 +304,8 @@ img {
 }
 
 .halfCol_content {
-  border: 8px solid dimGray;
-  background-color: white;
+  border: 6px solid #666;
+  background-color: #999;
   padding: 16px;
 }
 
@@ -317,13 +319,15 @@ footer {
   bottom: 0;
   height: 100px;
   width: 100%;
-  background-color: black;
+  background-image: url('img/header_bg.jpg');
+  background-size: cover;
+  border-top: 6px solid #666;
 }
 
 .footer_content {
   width: 60%;
   margin: 0 auto;
-  color: dimgray;
+  color: #999;
   overflow: hidden;
 }
 
@@ -348,7 +352,7 @@ footer {
   width: 60%;
   margin: 0 auto;
   height: 1000px;
-  border: 8px solid white;
+  border: 6px solid #666;
 }
 
 .mapFrame iframe {
