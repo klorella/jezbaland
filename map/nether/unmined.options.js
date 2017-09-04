@@ -1,5 +1,5 @@
 var minZoom = -4
-var maxZoom = 4
+var maxZoom = 6
 var defaultZoom = 4
 var standardZoom = 4
 var tileImageFormat = "jpg"
