@@ -5,5 +5,5 @@ var standardZoom = 4
 var tileImageFormat = "jpg"
 var minRegionX = -172
 var minRegionZ = -117
-var maxRegionX = 11
+var maxRegionX = 12
 var maxRegionZ = 106
