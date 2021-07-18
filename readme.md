@@ -1,4 +1,4 @@
 #Jezbaland Minecraft Server
 
-Home of Klorella, saralym & galacticyoyo.
+Home of Klorella, saralym & oldestcharm.
 
